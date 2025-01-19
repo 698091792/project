@@ -12,7 +12,7 @@ interface AutoSlideGalleryProps {
   interval?: number;
 }
 
-export default function AutoSlideGallery({ slide, interval = 5000 }: AutoSlideGalleryProps) {
+export default function AutoSlideGallery({ slide, interval = 10000 }: AutoSlideGalleryProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

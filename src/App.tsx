@@ -42,21 +42,21 @@ function App() {
               <div className="text-yellow-600 mb-4">
                 <Target className="h-12 w-12 mx-auto" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-center">{t('Impact')}</h3>
+              <h3 className="text-xl font-semibold mb-2 text-center">{t('impact')}</h3>
               <p className="text-gray-600 text-center">{t('ImpactDesc')}</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow ransition-transform duration-300 hover:scale-105">
               <div className="text-yellow-600 mb-4">
                 <Users className="h-12 w-12 mx-auto" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-center">{t('Innovate')}</h3>
+              <h3 className="text-xl font-semibold mb-2 text-center">{t('innovate')}</h3>
               <p className="text-gray-600 text-center">{t('InnovateDesc')}</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow ransition-transform duration-300 hover:scale-105">
               <div className="text-yellow-600 mb-4">
                 <Building2 className="h-12 w-12 mx-auto" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-center">{t('Grow')}</h3>
+              <h3 className="text-xl font-semibold mb-2 text-center">{t('grow')}</h3>
               <p className="text-gray-600 text-center">{t('GrowDesc')}</p>
             </div>
           </div>
