@@ -3,30 +3,35 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import slide1 from "../assets/w.png";
 import slide2 from "../assets/r.png";
 import slide3 from "../assets/a.png";
-
-const slides = [
-  {
-    title: "TRAININGS",
-    description:
-      "Unlock your tech potential with our hands-on training in website creation and app development, designed for teens and adults to build real-world skills and unleash creativity!",
-    image: slide1,
-  },
-  {
-    title: "WEBSITE CREATION",
-    description:
-      "We develop high-quality websites designed to attract and convert more prospects, driving growth and success for your business.",
-    image: slide2,
-  },
-  {
-    title: "WEB AND APP DEVELOPMENT",
-    description:
-      "Alongside our Edtech products, we create customized web and mobile applications tailored to enhance enterprise operations and productivity.",
-    image: slide3,
-  },
-];
+import { useLanguage } from "../context/LanguageContext";
 
 const Carousel = () => {
+  const { t } = useLanguage(); // Destructure `t` from the language context
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const slides = [
+    {
+      title: t("title1"), // Translation key with fallback
+      description: t(
+        "desc1",
+      ), // Translation key with fallback
+      image: slide1,
+    },
+    {
+      title: t("title2"), // Translation key with fallback
+      description: t(
+        "desc2",
+      ), // Translation key with fallback
+      image: slide2,
+    },
+    {
+      title: t("title3"), // Translation key with fallback
+      description: t(
+        "desc3",
+      ), // Translation key with fallback
+      image: slide3,
+    },
+  ];
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
@@ -80,3 +85,4 @@ const Carousel = () => {
 };
 
 export default Carousel;
+

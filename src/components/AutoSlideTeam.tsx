@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import D from '../assets/D.jpg';
 
 const teamMembers = [
   {
@@ -15,11 +16,16 @@ const teamMembers = [
   {
     name: "Awono Bilogue",
     role: "Lead Developer",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80"
+    image: D // Fixed this to use the imported image directly
   },
   {
-    name: "Ngouonouo Simo",
+    name: "Ngounouo Simo",
     role: "Design Lead",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80"
+  },
+  {
+    name: "Bilal Ahmadou",
+    role: "Business Development Manager",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80"
   }
 ];

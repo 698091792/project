@@ -19,7 +19,7 @@ const Navbar = () => {
           </div>
           
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-4">
             <a href="#home" className="text-gray-600 hover:text-yellow-800 transition-colors">{t('home')}</a>
             <a href="#mission" className="text-gray-600 hover:text-yellow-800 transition-colors">{t('mission')}</a>
             <a href="#vision" className="text-gray-600 hover:text-yellow-800 transition-colors">{t('vision')}</a>
@@ -27,9 +27,15 @@ const Navbar = () => {
             <a href="#team" className="text-gray-600 hover:text-yellow-800 transition-colors">{t('team')}</a>
             <a href="#gallery" className="text-gray-600 hover:text-yellow-800 transition-colors">{t('gallery')}</a>
             <LanguageSwitcher />
-            <button className="bg-yellow-800 text-white px-4 py-2 rounded-md hover:bg-yellow-600 transition-colors">
-              {t('joinUs')}
-            </button>
+            <a
+  href="https://wa.me/651118070?text=Hello!%20I%27d%20like%20to%20join%20your%20team."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-yellow-800 text-white px-4 py-2 rounded-md hover:bg-yellow-600 transition-colors"
+>
+  {t('joinUs')}
+</a>
+
           </div>
 
           {/* Mobile Menu Button */}

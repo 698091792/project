@@ -6,16 +6,17 @@ import ContactForm from './components/ContactForm';
 import AutoSlideTestimonials from './components/AutoSlideTestimonials';
 import AutoSlideTeam from './components/AutoSlideTeam';
 import AutoSlideGallery from './components/AutoSlideGallery';
-import { Users, Target, Building2, Award, UserPlus } from 'lucide-react';
+import { Users, Target, Building2, UserPlus } from 'lucide-react';
 import { useLanguage } from './context/LanguageContext';
 import linkedin from './assets/linkedin.png';
 import face from './assets/face.png'; 
 import insta from './assets/insta.png'; 
-import whatsapp from './assets/whatsapp.png'; 
+import stiven1 from './assets/stiven1.jpeg'; 
+import { FaWhatsapp } from "react-icons/fa";
 function App() {
   const { t } = useLanguage();
   const galleryImages = [
-    { src: "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?auto=format&fit=crop&q=80", alt: "Office" },
+    { src: stiven1, alt: "Office" },
     { src: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80", alt: "Team Working" },
     { src: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80", alt: "Meeting" }
   ];
@@ -34,24 +35,24 @@ function App() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">{t('mission')}</h2>
           <p className="text-center text-lg mb-8 max-w-2xl mx-auto ">
-            We understand that education is one of the critical challenges outlined in the United Nation Sustainable Development Goal(SDGs). By harnessing technology, we are dedicated to overcoming the lack of access to education and delivering inclusive learning opportunities that can bridge the education gap in Africa.
+           {t('mission1')}
           </p>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow ransition-transform duration-300 hover:scale-105">
               <div className="text-yellow-600 mb-4">
                 <Target className="h-12 w-12 mx-auto" />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-center">{t('Impact')}</h3>
               <p className="text-gray-600 text-center">{t('ImpactDesc')}</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow ransition-transform duration-300 hover:scale-105">
               <div className="text-yellow-600 mb-4">
                 <Users className="h-12 w-12 mx-auto" />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-center">{t('Innovate')}</h3>
               <p className="text-gray-600 text-center">{t('InnovateDesc')}</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow ransition-transform duration-300 hover:scale-105">
               <div className="text-yellow-600 mb-4">
                 <Building2 className="h-12 w-12 mx-auto" />
               </div>
@@ -64,25 +65,28 @@ function App() {
 
       {/* Vision and Goals */}
       <section id="vision" className="py-20 bg-yellow-600 text-white px-4">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">{t('vision')}</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white/10 p-8 rounded-lg backdrop-blur-lg">
-              <h3 className="text-2xl font-semibold mb-4">{t('ourVision')}</h3>
-              <p className="text-lg">{t('visionText')}</p>
-            </div>
-            <div className="bg-white/10 p-8 rounded-lg backdrop-blur-lg">
-              <h3 className="text-2xl font-semibold mb-4">{t('ourGoals')}</h3>
-              <ul className="list-disc list-inside space-y-2">
-                <li>Deliver exceptional value to our clients</li>
-                <li>Foster innovation and creativity</li>
-                <li>Build lasting partnerships</li>
-                <li>Contribute to technological advancement</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div className="max-w-7xl mx-auto">
+    <h2 className="text-4xl font-bold text-center mb-12">{t('vision')}</h2>
+    <div className="grid md:grid-cols-2 gap-8">
+      <div className="bg-white/10 p-8 rounded-lg backdrop-blur-lg transform transition-transform duration-300 hover:scale-105">
+        <h3 className="text-2xl font-semibold mb-4">{t('ourVision')}</h3>
+        <p className="text-lg">{t('visionText')}</p>
+      </div>
+      <div className="bg-white/10 p-8 rounded-lg backdrop-blur-lg transform transition-transform duration-300 hover:scale-105">
+        <h3 className="text-2xl font-semibold mb-4">{t('ourGoals')}</h3>
+        <ul className="space-y-2">
+          <li className="before:content-['✔'] before:mr-2 before:text-green-400">Deliver exceptional value to our clients</li>
+          <li className="before:content-['✔'] before:mr-2 before:text-green-400">Foster innovation and creativity</li>
+          <li className="before:content-['✔'] before:mr-2 before:text-green-400">Build lasting partnerships</li>
+          <li className="before:content-['✔'] before:mr-2 before:text-green-400">Contribute to technological advancement</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
       {/* About JPTEKS */}
       <section id="about" className="py-20 px-4">
@@ -95,22 +99,22 @@ function App() {
               </p>
               <TechAnimation />
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+            <div className="grid grid-cols-2 gap-4 ">
+              <div className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
                 <h4 className="text-2xl font-bold text-yellow-600">10+</h4>
-                <p className="text-gray-600">Years Experience</p>
+                <p className="text-gray-600">{t('e')}</p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+              <div className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
                 <h4 className="text-2xl font-bold text-yellow-600">500+</h4>
-                <p className="text-gray-600">Projects Completed</p>
+                <p className="text-gray-600">{t('p')}</p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+              <div className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
                 <h4 className="text-2xl font-bold text-yellow-600">100+</h4>
-                <p className="text-gray-600">Team Members</p>
+                <p className="text-gray-600">{t('t')}</p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+              <div className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
                 <h4 className="text-2xl font-bold text-yellow-600">50+</h4>
-                <p className="text-gray-600">Countries Served</p>
+                <p className="text-gray-600">{t('c')}</p>
               </div>
             </div>
           </div>
@@ -119,32 +123,98 @@ function App() {
 
       {/* Accomplishments */}
       <section className="py-20 bg-gray-100 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Accomplishments</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <Award className="h-12 w-12 text-yellow-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Best Tech Innovation 2023</h3>
-              <p className="text-gray-600">Recognized for groundbreaking solutions in AI</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <Award className="h-12 w-12 text-yellow-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Top 100 Tech Companies</h3>
-              <p className="text-gray-600">Listed among the most innovative companies</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <Award className="h-12 w-12 text-yellow-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Excellence in Service</h3>
-              <p className="text-gray-600">Awarded for outstanding client satisfaction</p>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div className="max-w-7xl mx-auto">
+    <h2 className="text-4xl font-bold text-center mb-12">Accomplishments</h2>
+    <div className="relative">
+      {/* Sliding Container */}
+      <div
+        className="flex overflow-x-scroll space-x-8 transition-transform duration-500 hide-scrollbar"
+        style={{
+          scrollbarWidth: "none", // For Firefox
+          msOverflowStyle: "none", // For IE 10+
+        }}
+      >
+        {/* Accomplishment 1 */}
+        <a
+          href="https://mentorguru.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white p-6 rounded-lg shadow-lg flex-shrink-0 min-w-[300px] hover:shadow-xl  transform transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Award Image 1"
+            className="h-32 w-full object-cover rounded-lg mb-4"
+          />
+          <h3 className="text-xl font-semibold mb-2">Mentor Guru</h3>
+          <p className="text-gray-600">{t('m')}</p>
+        </a>
+        {/* Accomplishment 2 */}
+        <a
+          href="https://top100techcompanies.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white p-6 rounded-lg shadow-lg flex-shrink-0 min-w-[300px] hover:shadow-xl  transform transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Award Image 2"
+            className="h-32 w-full object-cover rounded-lg mb-4"
+          />
+          <h3 className="text-xl font-semibold mb-2">Top 100 Tech Companies</h3>
+          <p className="text-gray-600">Listed among the most innovative companies</p>
+        </a>
+        {/* Accomplishment 3 */}
+        <a
+          href="https://excellenceinservice.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white p-6 rounded-lg shadow-lg flex-shrink-0 min-w-[300px] hover:shadow-xl transform transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Award Image 3"
+            className="h-32 w-full object-cover rounded-lg mb-4"
+          />
+          <h3 className="text-xl font-semibold mb-2">Excellence in Service</h3>
+          <p className="text-gray-600">Awarded for outstanding client satisfaction</p>
+        </a>
+      </div>
+
+      {/* Navigation Buttons */}
+      <button
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black text-white p-2 rounded-full hover:bg-gray-700"
+        onClick={() => {
+          document.querySelector('.overflow-x-scroll').scrollBy({
+            left: -300,
+            behavior: 'smooth',
+          });
+        }}
+      >
+        &#10094;
+      </button>
+      <button
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black text-white p-2 rounded-full hover:bg-gray-700"
+        onClick={() => {
+          document.querySelector('.overflow-x-scroll').scrollBy({
+            left: 300,
+            behavior: 'smooth',
+          });
+        }}
+      >
+        &#10095;
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
 
        {/* Testimonials */}
        <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Testimonials</h2>
+          <h2 className="text-4xl font-bold text-center mb-12">{t('test')}</h2>
           <AutoSlideTestimonials />
         </div>
       </section>
@@ -161,9 +231,9 @@ function App() {
 
       {/* Gallery */}
       <section id="gallery" className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-4xl  mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">{t('gallery')}</h2>
-          <AutoSlideGallery images={galleryImages} />
+          <AutoSlideGallery slide={galleryImages} />
         </div>
       </section>
 
@@ -190,7 +260,7 @@ function App() {
     rel="noopener noreferrer"
     className="flex items-center"
   >
-    <UserPlus className="mr-2" />
+    <FaWhatsapp className="text-green-500 mr-2" size={20} /> 
     {t('joinNow')}
   </a>
 </button>
@@ -208,11 +278,11 @@ function App() {
           <div>
             <h4 className="text-lg font-semibold mb-4">{t('quickLinks')}</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#home" className="hover:text-white">{t('home')}</a></li>
-              <li><a href="#about" className="hover:text-white">{t('about')}</a></li>
-              <li><a href="#team" className="hover:text-white">{t('team')}</a></li>
-              <li><a href="#gallery" className="hover:text-white">{t('gallery')}</a></li>
-              <li><a href="#contact" className="hover:text-white">{t('contact')}</a></li>
+              <li><a href="#home" className="hover:text-yellow-600">{t('home')}</a></li>
+              <li><a href="#about" className="hover:text-yellow-600">{t('about')}</a></li>
+              <li><a href="#team" className="hover:text-yellow-600">{t('team')}</a></li>
+              <li><a href="#gallery" className="hover:text-yellow-600">{t('gallery')}</a></li>
+              <li><a href="#contact" className="hover:text-yellow-600">{t('contact')}</a></li>
             </ul>
           </div>
           <div>
@@ -223,11 +293,12 @@ function App() {
       jpteks@gmail.com
     </a>
   </li>
-  <li>
-    <a href="tel:+237651118070" className="text-white hover:text-yellow-600">
-      +237 651-11-80-70
-    </a>
-  </li>
+  <li className="flex items-center">
+  <FaWhatsapp className="text-green-500 mr-2" size={20} /> {/* WhatsApp Icon */}
+  <a href="https://wa.me/237651118070" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-600">
+    +237 651-11-80-70
+  </a>
+</li>
               <li>Makepe, Douala </li>
             </ul>
           </div>
