@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import D from '../assets/D.jpg';
-
+import img2 from '../assets/img4.jpeg' 
 const teamMembers = [
   {
     name: "Pola Waffo",
     role: "CEO",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80"
+    image: img2
   },
   {
     name: "Yebga Ruben",

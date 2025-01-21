@@ -33,7 +33,7 @@ const ContactForm = () => {
         <div className="space-y-4">
           <div className="flex items-center space-x-4">
             <Mail className="h-5 w-5 text-yellow-600" />
-            <p>jpteks728@gmail.com</p>
+            <p>contact@jpteks.cm</p>
           </div>
           <div className="flex items-center space-x-4">
             <Phone className="h-5 w-5 text-yellow-600" />

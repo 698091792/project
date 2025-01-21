@@ -1,0 +1,8 @@
+.app {
+    overflow: scroll;
+    scrollbar-width: none; /* For Firefox */
+  }
+  
+  .app::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+  }
