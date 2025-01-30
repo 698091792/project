@@ -1,32 +1,42 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import D from '../assets/D.jpg';
-import img2 from '../assets/img4.jpeg' 
+import img2 from '../assets/img4.jpeg';
+import be from '../assets/be.jpeg';
+import n from '../assets/n.jpeg';
+import ru from '../assets/ru.jpeg';
+
+
 const teamMembers = [
   {
     name: "Pola Waffo",
     role: "CEO",
-    image: img2
+    image: img2,
+    portfolio: "https://polawaffo.com" // Add the actual portfolio link
   },
   {
     name: "Yebga Ruben",
     role: "CTO",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80"
+    image: ru,
+    portfolio: "https://yebgaruben.dev"
   },
   {
     name: "Awono Bilogue",
     role: "Lead Developer",
-    image: D // Fixed this to use the imported image directly
+    image: D,
+    portfolio: "https://awono.dev"
   },
   {
     name: "Ngounouo Simo",
     role: "Design Lead",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80"
+    image: n,
+    portfolio: "https://ngounouosimo.design"
   },
   {
     name: "Bilal Ahmadou",
     role: "Business Development Manager",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80"
+    image: be,
+    portfolio: "https://bilalahmadou.com"
   }
 ];
 
@@ -34,19 +44,19 @@ const AutoSlideTeam = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex === teamMembers.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? teamMembers.length - 1 : prevIndex - 1
     );
   };
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    const timer = setInterval(nextSlide, 5000);
     return () => clearInterval(timer);
   }, []);
 
@@ -68,7 +78,16 @@ const AutoSlideTeam = () => {
                   alt={member.name}
                   className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
                 />
-                <h3 className="text-xl font-semibold">{member.name}</h3>
+                <h3 className="text-xl font-semibold">
+                  <a
+                    href={member.portfolio}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    {member.name}
+                  </a>
+                </h3>
                 <p className="text-gray-600">{member.role}</p>
               </div>
             </div>
@@ -105,3 +124,4 @@ const AutoSlideTeam = () => {
 };
 
 export default AutoSlideTeam;
+

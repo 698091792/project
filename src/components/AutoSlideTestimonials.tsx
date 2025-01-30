@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import D from '../assets/D.jpg'; // Correct image import
+import bb from '../assets/bb.jpeg'; // Correct image import
+import E from '../assets/E.jpg'
+import h from '../assets/h.jpeg'
+
 
 const AutoSlideTestimonials = () => {
   const { t } = useLanguage(); // Assuming useLanguage provides a `t` function for translations
@@ -11,19 +14,19 @@ const AutoSlideTestimonials = () => {
       text: t('text1'),
       author: t('author1'),
       role: t('role1'),
-      profilePicture: D, // Directly assign the imported image
+      profilePicture: bb, // Directly assign the imported image
     },
     {
       text: t('text2'),
       author: t('author2'),
       role: t('role2'),
-      profilePicture: '/path/to/profile2.jpg', // Update with the correct image path
+      profilePicture: E, // Update with the correct image path
     },
     {
       text: t('text3'),
       author: t('author3'),
       role: t('role3'),
-      profilePicture: '/path/to/profile3.jpg', // Update with the correct image path
+      profilePicture: h, // Update with the correct image path
     },
   ];
 
