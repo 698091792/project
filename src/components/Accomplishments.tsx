@@ -2,6 +2,7 @@ import React from "react";
 import { useLanguage } from "../context/LanguageContext";
 import logo from '../assets/logo.jpeg' 
 import img1 from '../assets/img1.jpeg'
+
 const Accomplishments = () => {
   const { t } = useLanguage();
   return (

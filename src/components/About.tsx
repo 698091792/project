@@ -15,21 +15,21 @@ const About = () => {
             <div>
               <p className="md:text-lg text-md max-w-xl text-gray-600 mb-6 text-justify">{t("aboutText")}</p>
               <TechAnimation />
-            </div>
+            </div> 
             <div className="grid md:grid-cols-2 gap-4 ">
-              <div className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
+              <div className="bg-white p-6 rounded-lg hover:shadow-gray-900 shadow-md hover:shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
                 <h4 className="text-2xl font-bold text-yellow-600">30+</h4>
                 <p className="text-gray-600">{t("e")}</p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
+              <div className="bg-white p-6 rounded-lg hover:shadow-gray-900 shadow-md hover:shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
                 <h4 className="text-2xl font-bold text-yellow-600">5+</h4>
                 <p className="text-gray-600">{t("c")}</p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
+              <div className="bg-white p-6 rounded-lg hover:shadow-gray-900 shadow-md hover:shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
                 <h4 className="text-2xl font-bold text-yellow-600">10+</h4>
                 <p className="text-gray-600">{t("p")}</p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
+              <div className="bg-white p-6 rounded-lg hover:shadow-gray-900 shadow-md hover:shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
                 <h4 className="text-2xl font-bold text-yellow-600">10+</h4>
                 <p className="text-gray-600">{t("t")}</p>
               </div>
