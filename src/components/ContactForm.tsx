@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 import emailjs from "@emailjs/browser";
+import { useToast } from "@/hooks/use-toast"
 const ContactForm = () => {
+  const {toast }= useToast();
   const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
@@ -90,6 +92,7 @@ const ContactForm = () => {
             id="name"
             name="name"
             value={formData.name}
+            placeholder="Awono Jean "
             onChange={handleChange}
             required
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
@@ -109,6 +112,7 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
+            placeholder="jpteks728@gmail.com"
             required
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
           />
@@ -127,6 +131,7 @@ const ContactForm = () => {
             name="subject"
             value={formData.subject}
             onChange={handleChange}
+            placeholder="Besoin d'un site web (In need of a website)."
             required
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
           />
@@ -144,19 +149,19 @@ const ContactForm = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
+            placeholder="Decrivez le projet (Describe the project)."
             required
-            rows={4}
+            rows={6}
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
           />
         </div>
 
-        <a
-          href="mailto:your-email@example.com?subject=Subject%20Here&body=Message%20Here" // Replace with your email and customize the subject/body
+        <button
           className="w-full bg-yellow-600 text-white px-6 py-3 rounded-md hover:bg-yellow-800 transition-colors flex items-center justify-center space-x-2"
         >
           <Send className="h-5 w-5" />
           <span>{t("sendMessage")}</span>
-        </a>
+        </button>
       </form>
     </div>
   );
