@@ -1,5 +1,5 @@
 .app {
-    overflow: scroll;
+    overflow: hidden;
     scrollbar-width: none; /* For Firefox */
   }
   

@@ -83,7 +83,7 @@ const AutoSlideTeam = () => {
                     href={member.portfolio}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
+                    className="hover:underline"
                   >
                     {member.name}
                   </a>

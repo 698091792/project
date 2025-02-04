@@ -140,11 +140,11 @@ const Carousel = () => {
           backgroundImage: `url(${slides[currentIndex].image})`,
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center text-white px-4">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-4">
+        <div className="absolute font-serif inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center text-white px-4">
+          <h2 className="text-2xl md:text-4xl font-bold mb-2 sm:mb-4">
             {slides[currentIndex].title}
           </h2>
-          <p className="text-sm sm:text-base md:text-lg max-w-xs sm:max-w-lg md:max-w-2xl px-2 sm:px-4">
+          <p className="text-sm md:text-lg max-w-xs sm:max-w-lg md:max-w-2xl px-2 sm:px-4">
             {slides[currentIndex].description}
           </p>
         </div>

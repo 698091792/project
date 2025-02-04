@@ -14,13 +14,13 @@ const AutoSlideTestimonials = () => {
       text: t('text1'),
       author: t('author1'),
       role: t('role1'),
-      profilePicture: bb, // Directly assign the imported image
+      profilePicture: E, // Directly assign the imported image
     },
     {
       text: t('text2'),
       author: t('author2'),
       role: t('role2'),
-      profilePicture: E, // Update with the correct image path
+      profilePicture: bb, // Update with the correct image path
     },
     {
       text: t('text3'),
@@ -41,7 +41,7 @@ const AutoSlideTestimonials = () => {
   }, [testimonials.length]);
 
   return (
-    <div className="relative overflow-hidden h-[300px]">
+    <div className="relative overflow-hidden h-[400px] md:h-[300px]">
       <div
         className="flex transition-transform duration-500 ease-in-out h-full"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
