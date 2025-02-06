@@ -11,26 +11,67 @@ import img5 from '../assets/img5.jpeg'
 import linkedin from "../assets/linkedin.png";
 import face from "../assets/face.png";
 import insta from "../assets/insta.png";
-
+import aa from  "../assets/aa.jpeg";
+import bbb from  "../assets/bbb.jpeg";
+import cc from  "../assets/cc.jpeg";
+import dd from  "../assets/dd.jpeg";
+import ee from  "../assets/ee.jpeg";
+import ff from  "../assets/ff.jpeg";
+import gg from  "../assets/gg.jpeg";
+import hh from  "../assets/hh.jpeg";
+import ii from  "../assets/ii.jpeg";
+import jj from  "../assets/jj.jpeg";
 import { useLanguage } from "../context/LanguageContext";
 import { FaWhatsapp } from "react-icons/fa";
+
 const Gallery = () => {
   const galleryImages = [
     { src: stiven1, alt: "Office" },
     {
       src: img2,
       alt: "Team Working",
-    },
-    {
+    },    {
       src: img3,
-      alt: "Meeting",
-    },
-    {
-      src: img4,
-      alt: "Meeting",
-    },
+      alt: "Meeting",},{  src: img4,alt: "Meeting",},
     {
       src: img5,
+      alt: "Meeting",
+    },
+    {
+      src: aa,
+      alt: "Meeting",
+    },
+    
+    {
+      src: cc,
+      alt: "Meeting",
+    },
+    {
+      src: dd,
+      alt: "Meeting",
+    },
+    {
+      src: ee,
+      alt: "Meeting",
+    },
+    {
+      src: ff,
+      alt: "Meeting",
+    },
+    {
+      src: gg,
+      alt: "Meeting",
+    },
+    {
+      src: hh,
+      alt: "Meeting",
+    },
+    {
+      src: ii,
+      alt: "Meeting",
+    },
+    {
+      src: jj,
       alt: "Meeting",
     },
   ];
@@ -38,7 +79,7 @@ const Gallery = () => {
   return (
     <div className="flex flex-col">
       <section id="gallery" className="py-20 px-4">
-        <div className="max-w-4xl  mx-auto">
+        <div className="max-w-xl  mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">
             {t("gallery")}
           </h2>
@@ -120,7 +161,7 @@ const Gallery = () => {
                   href="mailto:jpteks@gmail.com"
                   className="text-white hover:text-yellow-600"
                 >
-                  contact@jpteks.cm
+                  jpteks728@gmail.com
                 </a>
               </li>
               <li className="flex items-center">

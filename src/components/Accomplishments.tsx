@@ -2,6 +2,7 @@ import React from "react";
 import { useLanguage } from "../context/LanguageContext";
 import logo from '../assets/logo.jpeg' 
 import img1 from '../assets/img1.jpeg'
+import gg from  "../assets/gg.jpeg";
 
 const Accomplishments = () => {
   const { t } = useLanguage();
@@ -31,7 +32,7 @@ const Accomplishments = () => {
                 className="h-32 w-full object-cover rounded-lg mb-4"
               />
               <h3 className="text-xl font-semibold mb-2">Mentor Guru</h3>
-              <p className="text-gray-600">{t("m")}</p>
+              <p className="text-white">{t("m")}</p>
             </div>
             {/* Accomplishment 2 */}
             <div
@@ -43,8 +44,8 @@ const Accomplishments = () => {
                 alt="Award Image 1"
                 className="h-32 w-full object-cover rounded-lg mb-4"
               />
-              <h3 className="text-xl font-semibold mb-2">Mentor Guru</h3>
-              <p className="text-gray-600">{t("m")}</p>
+              <h3 className="text-xl font-semibold mb-2">Formation</h3>
+              <p className="text-white">{t("bbb")}</p>
             </div>
             {/* Accomplishment 3 */}
             <div
@@ -52,12 +53,12 @@ const Accomplishments = () => {
               className="bg-white/10 p-6 rounded-lg shadow-lg flex-shrink-0 min-w-[300px] hover:shadow-xl  transform transition-transform duration-300 hover:scale-105"
             >
               <img
-                src={logo}
+                src={gg}
                 alt="Award Image 1"
                 className="h-32 w-full object-cover rounded-lg mb-4"
               />
-              <h3 className="text-xl font-semibold mb-2">Mentor Guru</h3>
-              <p className="text-gray-600">{t("m")}</p>
+              <h3 className="text-xl font-semibold mb-2">Competition</h3>
+              <p className="text-white">{t("bb")}</p>
             </div>
           </div>
 
