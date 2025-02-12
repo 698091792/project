@@ -24,7 +24,7 @@ const teamMembers = [
     name: "Awono Bilogue",
     role: "Lead Developer",
     image: D,
-    portfolio: "https://awono.dev"
+    portfolio: "https://awono.dev."
   },
   {
     name: "Ngounouo Simo",
