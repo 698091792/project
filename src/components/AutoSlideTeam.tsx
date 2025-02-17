@@ -33,12 +33,16 @@ const teamMembers = [
     name: "Awono Bilogue",
     role: "Lead Developer",
     image: D,
+<<<<<<< HEAD
     portfolio: "https://awono.dev",
     social: {
       linkedin: "https://www.linkedin.com/feed/",
       instagram: "https://instagram.com/awonobilogue",
       facebook: "https://facebook.com/awonobilogue"
     }
+=======
+    portfolio: "https://awono.dev."
+>>>>>>> dev
   },
   {
     name: "Ngounouo Simo",
