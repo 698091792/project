@@ -112,7 +112,7 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="jpteks728@gmail.com"
+            placeholder="contact@jpteks.cm"
             required
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
           />
