@@ -100,7 +100,7 @@ const Navbar = () => {
               : 'opacity-0 -translate-y-full pointer-events-none'
           }`}
         >
-          <div className="px-4 pt-4 pb-6 space-y-2">
+          <div className="px-4 pt-4 pb-6 space-y-2 text-sm">
             {['home', 'mission', 'vision', 'about', 'team', 'gallery'].map((link) => (
               <a
                 key={link}

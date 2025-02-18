@@ -1,8 +1,7 @@
 import React from "react";
 import { useLanguage } from "../context/LanguageContext";
-import logo from '../assets/logo.jpeg' 
-import img1 from '../assets/img1.jpeg'
-
+import logo from "../assets/logo.jpeg";
+import img1 from "../assets/img1.jpeg";
 const Accomplishments = () => {
   const { t } = useLanguage();
   return (
@@ -21,10 +20,7 @@ const Accomplishments = () => {
             }}
           >
             {/* Accomplishment 1 */}
-            <div
-              
-              className="bg-white/10 p-6 rounded-lg shadow-lg flex-shrink-0 min-w-[300px] hover:shadow-xl  transform transition-transform duration-300 hover:scale-105"
-            >
+            <div className="bg-white/10 p-6 rounded-lg shadow-lg flex-shrink-0 min-w-[300px] hover:shadow-xl  transform transition-transform duration-300 hover:scale-105">
               <img
                 src={logo}
                 alt="Award Image 1"
@@ -34,10 +30,7 @@ const Accomplishments = () => {
               <p className="text-gray-600">{t("m")}</p>
             </div>
             {/* Accomplishment 2 */}
-            <div
-              
-              className="bg-white/10 p-6 rounded-lg shadow-lg flex-shrink-0 min-w-[300px] hover:shadow-xl  transform transition-transform duration-300 hover:scale-105"
-            >
+            <div className="bg-white/10 p-6 rounded-lg shadow-lg flex-shrink-0 min-w-[300px] hover:shadow-xl  transform transition-transform duration-300 hover:scale-105">
               <img
                 src={img1}
                 alt="Award Image 1"
@@ -47,10 +40,7 @@ const Accomplishments = () => {
               <p className="text-gray-600">{t("m")}</p>
             </div>
             {/* Accomplishment 3 */}
-            <div
-              
-              className="bg-white/10 p-6 rounded-lg shadow-lg flex-shrink-0 min-w-[300px] hover:shadow-xl  transform transition-transform duration-300 hover:scale-105"
-            >
+            <div className="bg-white/10 p-6 rounded-lg shadow-lg flex-shrink-0 min-w-[300px] hover:shadow-xl  transform transition-transform duration-300 hover:scale-105">
               <img
                 src={logo}
                 alt="Award Image 1"
