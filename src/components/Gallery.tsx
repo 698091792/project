@@ -158,10 +158,10 @@ const Gallery = () => {
             <ul className="space-y-2 text-gray-400">
               <li>
                 <a
-                  href="mailto:jpteks@gmail.com"
+                  href="mailto:contact@jpteks.cm"
                   className="text-white hover:text-yellow-600"
                 >
-                  jpteks728@gmail.com
+                  contact@jpteks.cm
                 </a>
               </li>
               <li className="flex items-center">
